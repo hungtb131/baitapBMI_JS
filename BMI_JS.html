@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đo chỉ số cơ thể</title>
+</head>
+<body>
+<script>
+    const UnderWeight = 18.5;
+    const NorMal = 25.0;
+    const OverWeight = 30;
+    let weight;
+    weight = + prompt("Trọng lượng cơ thể");
+    let height;
+    height = + prompt("Chiều cao cơ thể");
+    let bmi = weight / (height * height);
+    if (bmi < UnderWeight) {
+        document.write("UNDERWEIGHT");
+    } else if (bmi< NorMal) {
+        document.write("Normal");
+    } else if (NorMal <= bmi && bmi < OverWeight) {
+        document.write("Overweight");
+    } else {
+        document.write("Obese");
+    }
+
+</script>
+</body>
+</html>
